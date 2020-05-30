@@ -1,5 +1,3 @@
-# tiny
+# Stained-Glass Generator
 
-A tiny practice npm package.
-
-## Version 2.0.0
+A package that creates a random stained-glass pattern, applied on an HTML canvas.
