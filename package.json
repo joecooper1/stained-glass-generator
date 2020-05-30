@@ -1,12 +1,13 @@
 {
-    "name": "@joecooper1/tiny",
+    "name": "@joecooper1/stained-glass-generator",
     "version": "2.0.0",
-    "description": "Removes all spaces from a string",
+    "description": "Creates a randomised stained glass pattern on an HTML canvas",
     "license": "MIT",
-    "repository": "joecooper1/tiny",
+    "repository": "joecooper1/stained-glass-generator",
     "main": "index.js",
     "keywords": [
-        "tiny",
+        "stained-glass-generator",
+        "stained-glass",
         "npm",
         "package",
         "joecooper1"
