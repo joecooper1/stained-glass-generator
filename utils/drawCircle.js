@@ -1,5 +1,11 @@
 //Draw circle
-export const drawCircle = (pane, colorScheme, ctx, pieceWidth, transparency) => {
+export const drawCircle = (
+  pane,
+  colorScheme,
+  ctx,
+  pieceWidth,
+  transparency
+) => {
   //Set fill style and stroke style and line width
   if (colorScheme === "hsl") {
     ctx.fillStyle = `hsla(${pane.colorsHSL.h}, ${pane.colorsHSL.s}%, ${pane.colorsHSL.l}%, ${transparency})`;
