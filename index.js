@@ -21,7 +21,7 @@ export default function drawStainedGlass(
     colorScheme = "rgb",
     colorConsistency = 30,
     transparency = 1,
-    scatter = 2,
+    scatter = 5,
     angle = 0,
   } = {}
 ) {
@@ -56,6 +56,9 @@ export default function drawStainedGlass(
   //Limit scatter to 0-10
   if (scatter < 0) scatter = 0;
   else if (scatter > 10) scatter = 10;
+
+  //Make scatter 0 if not abstract
+  if (shape !== 'abstract') scatter = 0;
 
   //If size is a single value, set width and height the same
   //Else if size is an array, set width as size[0] and height as size[1]

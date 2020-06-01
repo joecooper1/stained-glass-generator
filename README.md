@@ -57,6 +57,9 @@ Option | Input | Range | Effect
 **lineWidth** | integer | 0 - 10 | Determines the thickness of the lines seperating each pane. Defaults to 1. **Tip** - *try settings it to 0 when the size of the panes is small.*
 **lineColor** | string | any valid color | Sets the color for the lines to be drawn in. Defaults to black.
 **deviation** | integer | 0 and up | Determines how irregular the shapes are. Only applies to the abstract pattern. **Tip** - *Putting it higher than the size of the pieces will produce probably bad effects.*
+**colorScheme** | string | 'rgb', 'hsl' | Determines what type of color values will be used to make the colors. The difference is slight, but in general 'rgb' produces a subtler pattern than 'hsl', which can be quite brash. Defaults to rgb.
+**colorConsistency** | integer | 0 - 200 | Determines how varied the colors will be. 0 means perfectly uniform, 200 means completely random. Defaults to 30.
+**scatter** | integer | 0 - 10 | Scatters the light across the panes, sort of. 10 scatters light a lot, 0 not at all.
 
 
 
