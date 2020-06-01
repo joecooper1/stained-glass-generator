@@ -59,6 +59,8 @@ export default function drawStainedGlass(
 
   //Make scatter 0 if not abstract
   if (shape !== 'abstract') scatter = 0;
+  //Default scatter to 1 if colorScheme is rgb
+  else if (colorScheme === 'rgb') scatter = 0;
 
   //If size is a single value, set width and height the same
   //Else if size is an array, set width as size[0] and height as size[1]
