@@ -3,6 +3,9 @@ import {
   makePanes,
   setColors,
   scatterPanes,
+  drawPolygon,
+  drawCircle,
+  drawRing,
 } from "./utils/exports";
 
 module.exports = function drawStainedGlass(
@@ -104,6 +107,60 @@ module.exports = function drawStainedGlass(
         colorScheme,
         getRandomNumber
       );
+    }
+  }
+
+  //Scatter
+  if (scatter) scatterPanes(panes, scatter, colorScheme);
+
+  //Draw
+  for (let i = 1; i < panes.length - 1; i++) {
+    for (let j = 1; j < panes[i].length - 1; j++) {
+      const pane = panes[i][j];
+      //Draw pane
+      ctx.strokeStyle = lineColor;
+      ctx.lineWidth = lineWidth;
+      if (shape === "circle")
+        drawCircle(pane, colorScheme, ctx, pieceWidth, transparency);
+      else if (shape === "rings")
+        drawRing(pane, i, j, colorScheme, ctx, transparency, pieceWidth);
+      else
+        drawPolygon(
+          pane,
+          i,
+          j,
+          panes,
+          colorScheme,
+          ctx,
+          transparency,
+          angle,
+          lineWidth,
+          shape
+        );
+    }
+  }
+
+  //Draw ring outlines
+  if (shape === "rings") {
+    for (let i = 0; i < panes.length - 2; i++) {
+      for (let j = 0; j < panes[i].length - 2; j++) {
+        const pane = panes[i][j];
+        //Every other shape
+        if ((i + j) % 2 === 0) {
+          //Draw circles
+          ctx.beginPath();
+          ctx.arc(pane.coords.x, pane.coords.y, pieceWidth, 0, Math.PI * 2);
+          if (lineWidth > 0) ctx.stroke();
+          //Draw lines
+          if (i % 2 > 0) {
+            ctx.beginPath();
+            ctx.moveTo(panes[i][j + 2].coords.x, panes[i][j + 2].coords.y);
+            ctx.lineTo(pane.coords.x, pane.coords.y);
+            ctx.lineTo(panes[i + 2][j].coords.x, panes[i + 2][j].coords.y);
+            if (lineWidth > 0) ctx.stroke();
+          }
+        }
+      }
     }
   }
 };
