@@ -8,7 +8,7 @@ import {
   drawRing,
 } from "./utils/exports";
 
-module.exports = function drawStainedGlass(
+export default function drawStainedGlass(
   ctx,
   height,
   width,
