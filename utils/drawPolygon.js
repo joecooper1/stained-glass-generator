@@ -48,7 +48,18 @@ const drawPolygon = (
   if (shape === "rect" && i > 2 && angle > 0) {
     //If the pane above it is actually lower, rerender the above pane
     if (panes[i - 1][j - 1].coords.y < panes[i - 2][j - 1].coords.y) {
-      drawPolygon(panes[i - 1][j], i - 1, j);
+      drawPolygon(
+        panes[i - 1][j],
+        i - 1,
+        j,
+        panes,
+        colorScheme,
+        ctx,
+        transparency,
+        angle,
+        lineWidth,
+        shape
+      );
       //Redraw the top line
       ctx.beginPath();
       ctx.moveTo(panes[i - 1][j].coords.x, panes[i - 1][j].coords.y);
