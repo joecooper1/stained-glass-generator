@@ -1,6 +1,6 @@
 {
     "name": "@joecooper1/stained-glass-generator",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Creates a randomised stained glass pattern on an HTML canvas",
     "license": "MIT",
     "repository": "joecooper1/stained-glass-generator",
