@@ -69,6 +69,10 @@ export default function drawStainedGlass(
     pieceHeight = pieceSize[1];
   }
 
+  //Limit pieceWidth and pieceHeight to minimum 5
+  if (pieceWidth < 5) pieceWidth = 5;
+  if (pieceHeight < 5) pieceHeight = 5;
+
   //Limit angle and modify
   if (angle < 0) angle = 0;
   else if (angle > 10) angle = 10;
@@ -163,4 +167,4 @@ export default function drawStainedGlass(
       }
     }
   }
-};
+}
