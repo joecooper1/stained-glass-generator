@@ -2,6 +2,8 @@
 
 A package that creates a random stained-glass pattern, based on inputted options, applied on an HTML canvas.
 
+![example images](/images/imagesCollection.png)
+
 ---
 
 ## **Contents**
