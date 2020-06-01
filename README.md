@@ -2,7 +2,7 @@
 
 A package that creates a random stained-glass pattern, based on inputted options, applied on an HTML canvas.
 
-![example images](/images/imagesCollection.png)
+
 
 ---
 
@@ -12,6 +12,12 @@ A package that creates a random stained-glass pattern, based on inputted options
 - [Use](#use)
 - [Options](#options)
 - [License](#license)
+
+---
+
+A few different possibilities:
+
+![example images](/images/imagesCollection.png)
 
 ---
 
