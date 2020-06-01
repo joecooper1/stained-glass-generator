@@ -1,3 +1,10 @@
+import {
+  getRandomNumber,
+  makePanes,
+  setColors,
+  scatterPanes,
+} from "./utils/exports";
+
 module.exports = function drawStainedGlass(
   ctx,
   height,
@@ -70,4 +77,33 @@ module.exports = function drawStainedGlass(
   //Determine number of rows and columns
   let rows = Math.floor(height / pieceHeight + 2);
   let columns = Math.floor(width / pieceWidth + 2);
+
+  //Make array of panes
+  const panes = makePanes(
+    rows,
+    columns,
+    shape,
+    deviation,
+    angle,
+    pieceWidth,
+    pieceHeight,
+    getRandomNumber
+  );
+
+  //Set colors for panes
+  for (let i = 0; i < panes.length; i++) {
+    for (let j = 0; j < panes[i].length; j++) {
+      const pane = panes[i][j];
+      //Set colors
+      setColors(
+        pane,
+        i,
+        j,
+        panes,
+        colorConsistency,
+        colorScheme,
+        getRandomNumber
+      );
+    }
+  }
 };
