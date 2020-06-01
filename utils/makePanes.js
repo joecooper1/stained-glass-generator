@@ -1,5 +1,14 @@
-export default makePanes = (rows, columns, shape, deviation, angle, pieceWidth, pieceHeight, getRandomNumber) => {
-    //Create an array of panes
+export default makePanes = (
+  rows,
+  columns,
+  shape,
+  deviation,
+  angle,
+  pieceWidth,
+  pieceHeight,
+  getRandomNumber
+) => {
+  //Create an array of panes
   const panes = [];
   //Fill with panes of designated width and height, up to the width and height of the canvas (+ 1)
   for (let i = 0; i < rows + 2; i += 1) {
@@ -35,4 +44,4 @@ export default makePanes = (rows, columns, shape, deviation, angle, pieceWidth, 
   }
 
   return panes;
-}
+};
