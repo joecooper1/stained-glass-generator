@@ -44,8 +44,8 @@ const drawPolygon = (
   }
   if (lineWidth > 0) ctx.stroke();
 
-  //If rect and not top two rows
-  if (shape === "rect" && i > 2 && angle > 0) {
+  //If rectangle and not top two rows
+  if (shape === "rectangle" && i > 2 && angle > 0) {
     //If the pane above it is actually lower, rerender the above pane
     if (panes[i - 1][j - 1].coords.y < panes[i - 2][j - 1].coords.y) {
       drawPolygon(

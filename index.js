@@ -29,7 +29,7 @@ export default function drawStainedGlass(
   if (colorScheme !== "rgb" && colorScheme !== "hsl") colorScheme = "rgb";
   if (
     shape !== "abstract" &&
-    shape !== "rect" &&
+    shape !== "rectangle" &&
     shape !== "circle" &&
     shape !== "rings"
   )
@@ -78,8 +78,8 @@ export default function drawStainedGlass(
   else if (angle > 10) angle = 10;
   angle = angle * (pieceHeight / 10);
 
-  //If shape is not rect, pieceHeight must equal pieceWidth
-  if (shape !== "rect") pieceHeight = pieceWidth;
+  //If shape is not rectangle, pieceHeight must equal pieceWidth
+  if (shape !== "rectangle") pieceHeight = pieceWidth;
 
   //Determine number of rows and columns
   let rows = Math.floor(height / pieceHeight + 2);

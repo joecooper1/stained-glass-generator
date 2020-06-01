@@ -14,9 +14,9 @@ export default makePanes = (
   for (let i = 0; i < rows + 2; i += 1) {
     //Set range of variation if shape is abstract
     const range = shape === "abstract" ? deviation : 0;
-    //Set startpoint if shape is rect
+    //Set startpoint if shape is rectangle
     const startPoint =
-      shape === "rect"
+      shape === "rectangle"
         ? //Not on the first or last row
           i === 0 || i === rows + 1
           ? 0
