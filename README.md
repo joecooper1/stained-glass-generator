@@ -9,6 +9,7 @@ A package that creates a random stained-glass pattern, based on inputted options
 - [Installation](#installation)
 - [Use](#use)
 - [Options](#options)
+- [License](#license)
 
 ---
 
@@ -62,6 +63,15 @@ Option | Input | Range | Effect
 **scatter** | integer | 0 - 10 | Scatters the light across the panes, sort of. 10 scatters light a lot, 0 not at all. Only works for abstract pattern on hsl settings for now, because it looks gross on everything else. Defaults to 5.
 **transparency** | number | 0 - 1 | Determines the transparency of the glass. Defaults to 1, or to 0.5 if the pattern is rings.
 **angle** | integer | 0 - 10 | Determines the angle of horizontal lines. Only works for the rectangle pattern. Work in progress - for now it does not work 100%.
+
+---
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2020 © Joe Cooper.
 
 
 
