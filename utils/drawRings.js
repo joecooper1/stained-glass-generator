@@ -1,5 +1,5 @@
 //Draw rings
-export const drawRing = (
+export default drawRing = (
   pane,
   i,
   j,

@@ -1,5 +1,5 @@
 //Scatter
-export const scatterPanes = (panes, scatter, colorScheme) => {
+export default scatterPanes = (panes, scatter, colorScheme) => {
     for (let i = 0; i < panes.length; i++) {
       for (let j = 0; j < panes[i].length; j++) {
         const pane = panes[i][j];

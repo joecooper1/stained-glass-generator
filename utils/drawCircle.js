@@ -1,5 +1,5 @@
 //Draw circle
-export const drawCircle = (
+export default drawCircle = (
   pane,
   colorScheme,
   ctx,

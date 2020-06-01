@@ -1,5 +1,5 @@
 //Draw polygon
-const drawPolygon = (
+export default drawPolygon = (
   pane,
   i,
   j,
