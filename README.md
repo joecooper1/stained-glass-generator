@@ -59,7 +59,9 @@ Option | Input | Range | Effect
 **deviation** | integer | 0 and up | Determines how irregular the shapes are. Only applies to the abstract pattern. **Tip** - *Putting it higher than the size of the pieces will produce probably bad effects.*
 **colorScheme** | string | 'rgb', 'hsl' | Determines what type of color values will be used to make the colors. The difference is slight, but in general 'rgb' produces a subtler pattern than 'hsl', which can be quite brash. Defaults to rgb.
 **colorConsistency** | integer | 0 - 200 | Determines how varied the colors will be. 0 means perfectly uniform, 200 means completely random. Defaults to 30.
-**scatter** | integer | 0 - 10 | Scatters the light across the panes, sort of. 10 scatters light a lot, 0 not at all.
+**scatter** | integer | 0 - 10 | Scatters the light across the panes, sort of. 10 scatters light a lot, 0 not at all. Only works for abstract pattern on hsl settings for now, because it looks gross on everything else. Defaults to 5.
+**transparency** | number | 0 - 1 | Determines the transparency of the glass. Defaults to 1, or to 0.5 if the pattern is rings.
+**angle** | integer | 0 - 10 | Determines the angle of horizontal lines. Only works for the rectangle pattern. Work in progress - for now it does not work 100%.
 
 
 
