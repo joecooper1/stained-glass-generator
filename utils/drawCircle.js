@@ -1,11 +1,11 @@
 //Draw circle
-export default drawCircle = (
+export default function drawCircle(
   pane,
   colorScheme,
   ctx,
   pieceWidth,
   transparency
-) => {
+) {
   //Set fill style and stroke style and line width
   if (colorScheme === "hsl") {
     ctx.fillStyle = `hsla(${pane.colorsHSL.h}, ${pane.colorsHSL.s}%, ${pane.colorsHSL.l}%, ${transparency})`;
@@ -15,4 +15,4 @@ export default drawCircle = (
   ctx.beginPath();
   ctx.arc(pane.coords.x, pane.coords.y, pieceWidth / 2, 0, Math.PI * 2);
   ctx.fill();
-};
+}

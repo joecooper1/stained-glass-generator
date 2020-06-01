@@ -1,5 +1,5 @@
 //Draw rings
-export default drawRing = (
+export default function drawRing (
   pane,
   i,
   j,
@@ -7,7 +7,7 @@ export default drawRing = (
   ctx,
   transparency,
   pieceWidth
-) => {
+) {
   //Set fill style and stroke style and line width
   if (colorScheme === "hsl") {
     ctx.fillStyle = `hsla(${pane.colorsHSL.h}, ${pane.colorsHSL.s}%, ${pane.colorsHSL.l}%, ${transparency})`;

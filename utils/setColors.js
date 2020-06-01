@@ -1,5 +1,5 @@
 //A function that sets the colors for a pane
-export default setColors = (
+export default function setColors(
   pane,
   i,
   j,
@@ -7,7 +7,7 @@ export default setColors = (
   colorConsistency,
   colorScheme,
   getRandomNumber
-) => {
+) {
   //Set range for color changes based on consistency
   const range = colorConsistency;
   //Set temporary rgb and hsl values

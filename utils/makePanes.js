@@ -1,4 +1,4 @@
-export default makePanes = (
+export default function makePanes(
   rows,
   columns,
   shape,
@@ -7,7 +7,7 @@ export default makePanes = (
   pieceWidth,
   pieceHeight,
   getRandomNumber
-) => {
+) {
   //Create an array of panes
   const panes = [];
   //Fill with panes of designated width and height, up to the width and height of the canvas (+ 1)

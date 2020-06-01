@@ -1,5 +1,5 @@
 //Draw polygon
-export default drawPolygon = (
+export default function drawPolygon(
   pane,
   i,
   j,
@@ -10,7 +10,11 @@ export default drawPolygon = (
   angle,
   lineWidth,
   shape
-) => {
+) {
+  //Set height and width of the panes, in terms of how many blocks they cover
+  //This is always one, but could be increased in future to create different sized panes
+  const wide = 1;
+  const high = 1;
   //Set fill style and stroke style and line width
   if (colorScheme === "hsl") {
     ctx.fillStyle = `hsla(${pane.colorsHSL.h}, ${pane.colorsHSL.s}%, ${pane.colorsHSL.l}%, ${transparency})`;
@@ -69,4 +73,4 @@ export default drawPolygon = (
       if (lineWidth > 0) ctx.stroke();
     }
   }
-};
+}
