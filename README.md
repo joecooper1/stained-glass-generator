@@ -73,6 +73,14 @@ Option | Input | Range | Effect
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2020 © Joe Cooper.
 
+---
+
+## Me 
+
+Here's the code on github: https://github.com/joecooper1/stained-glass-generator
+
+Here's me: https://joecooper1.github.io/pf/
+
 
 
 
